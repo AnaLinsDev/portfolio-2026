@@ -1,10 +1,11 @@
 import { useT } from "@/hooks/useT";
+import ScreenTitle from "../ScreenTitle";
 
 export default function AboutMe() {
   const { t } = useT();
   return (
     <div>
-      <h1>{t("aboutMe.title")}</h1>
+      <ScreenTitle idx={t("aboutMe.idx")} title={t("aboutMe.title")} />
     </div>
   );
 }

@@ -8,6 +8,8 @@
   --gray-color: rgb(136, 146, 176);
   --white-color: rgb(204, 214, 246);
 
+  --dark-button: rgba(0, 139, 118, 0.287);
+
   --background: #ffffff;
   --foreground: rgb(10, 25, 47);
 
@@ -195,5 +197,24 @@
 }
 
 .container {
+  padding-top: 50px;
   margin: 0 auto;
+}
+
+.container h1 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.screen-title h1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.line-title {
+  flex: 1;
+  height: 1px;
+  background: var(--highlight-color);
 }

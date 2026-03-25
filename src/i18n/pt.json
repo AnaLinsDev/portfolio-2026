@@ -1,20 +1,26 @@
 {
   "home": {
+    "idx": "01",
     "title": "Início"
   },
   "aboutMe": {
+    "idx": "02",
     "title": "Sobre Mim"
   },
   "skills": {
+    "idx": "03",
     "title": "Habilidades"
   },
   "projects": {
+    "idx": "04",
     "title": "Projetos"
   },
   "experience": {
+    "idx": "05",
     "title": "Experiência"
   },
   "contact": {
+    "idx": "06",
     "title": "Contato"
   }
 }

@@ -1,20 +1,26 @@
 {
   "home": {
+    "idx": "01",
     "title": "Home"
   },
   "aboutMe": {
+    "idx": "02",
     "title": "About Me"
   },
   "skills": {
+    "idx": "03",
     "title": "Skills"
   },
   "projects": {
+    "idx": "04",
     "title": "Projects"
   },
   "experience": {
+    "idx": "05",
     "title": "Experience"
   },
   "contact": {
+    "idx": "06",
     "title": "Contact"
   }
 }

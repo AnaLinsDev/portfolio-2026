@@ -1,0 +1,60 @@
+/* =========================
+  HOME
+========================= */
+
+.highlight-class,
+.dark-class {
+  color: var(--highlight-color) !important;
+  font-weight: bold !important;
+  transition: all 0.3s ease;
+}
+
+/* Outline button */
+.highlight-class {
+  padding: 13px 23px !important;
+  border: 2px solid var(--highlight-color) !important;
+  background-color: transparent !important;
+}
+
+.highlight-class:hover {
+  background-color: #112240 !important;
+}
+
+/* Dark button */
+.dark-class {
+  padding: 15px 25px !important;
+  background-color: var(--dark-button) !important;
+  color: white !important;
+}
+
+.dark-class:hover {
+  background-color: #112240 !important;
+  color: var(--highlight-color) !important;
+}
+
+/* Container */
+.home-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* =========================
+  ABOUT ME
+========================= */
+
+/* =========================
+  SKILLS
+========================= */
+
+/* =========================
+  PROJECTS
+========================= */
+
+/* =========================
+  EXPERIENCE
+========================= */
+
+/* =========================
+  CONTACT
+========================= */

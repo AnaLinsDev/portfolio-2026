@@ -5,18 +5,31 @@ import Home from "./components/screens/Home";
 import Projects from "./components/screens/Projects";
 import Experience from "./components/screens/Experience";
 import Contact from "./components/screens/Contact";
+import ResponsiveAppBar from "./components/ResponsiveAppBar";
 
-const sections = [Home, AboutMe, Skills, Projects, Experience, Contact];
+const sections = [
+  { id: "home", component: Home },
+  { id: "about", component: AboutMe },
+  { id: "skills", component: Skills },
+  { id: "projects", component: Projects },
+  { id: "experience", component: Experience },
+  { id: "contact", component: Contact },
+];
 
 function App() {
   return (
-    <div className="container">
-      {sections.map((Section, index) => (
-        <ScreenCard key={index}>
-          <Section />
-        </ScreenCard>
-      ))}
-    </div>
+    <>
+      <ResponsiveAppBar />
+      <div className="container">
+        {sections.map(({ id, component: Section }) => (
+          <ScreenCard key={id}>
+            <div id={id}>
+              <Section />
+            </div>
+          </ScreenCard>
+        ))}
+      </div>
+    </>
   );
 }
 
