@@ -10,7 +10,7 @@ const sections = [Home, AboutMe, Skills, Projects, Experience, Contact];
 
 function App() {
   return (
-    <div>
+    <div className="container">
       {sections.map((Section, index) => (
         <ScreenCard key={index}>
           <Section />

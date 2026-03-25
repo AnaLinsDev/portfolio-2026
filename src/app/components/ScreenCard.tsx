@@ -3,5 +3,5 @@ type Props = {
 };
 
 export default function ScreenCard({ children }: Props) {
-  return <div className="container">{children}</div>;
+  return <div className="section">{children}</div>;
 }

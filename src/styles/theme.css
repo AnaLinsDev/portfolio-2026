@@ -4,19 +4,23 @@
 :root {
   --font-size: 16px;
 
+  --highlight-color: rgb(100, 255, 218);
+  --gray-color: rgb(136, 146, 176);
+  --white-color: rgb(204, 214, 246);
+
   --background: #ffffff;
-  --foreground: oklch(0.145 0 0);
+  --foreground: rgb(10, 25, 47);
 
   --card: #ffffff;
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: rgb(10, 25, 47);
 
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
+  --popover: #ffffff;
+  --popover-foreground: rgb(10, 25, 47);
 
   --primary: #030213;
-  --primary-foreground: oklch(1 0 0);
+  --primary-foreground: #ffffff;
 
-  --secondary: oklch(0.95 0.0058 264.53);
+  --secondary: #f1f1f3;
   --secondary-foreground: #030213;
 
   --muted: #ececf0;
@@ -34,11 +38,11 @@
   --input-background: #f3f3f5;
   --switch-background: #cbced4;
 
-  --ring: oklch(0.708 0 0);
+  --ring: #b4b4b4;
 
   --radius: 0.625rem;
 
-  /* Typography scale (FIX IMPORTANT) */
+  /* Typography scale */
   --text-2xl: 1.5rem;
   --text-xl: 1.25rem;
   --text-lg: 1.125rem;
@@ -52,35 +56,35 @@
    DARK MODE
 ========================= */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
+  --background: rgb(10, 25, 47);
+  --foreground: #fafafa;
 
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
+  --card: rgb(10, 25, 47);
+  --card-foreground: #fafafa;
 
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
+  --popover: rgb(10, 25, 47);
+  --popover-foreground: #fafafa;
 
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
+  --primary: #fafafa;
+  --primary-foreground: #2a2a2a;
 
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
+  --secondary: #3a3a3a;
+  --secondary-foreground: #fafafa;
 
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
+  --muted: #3a3a3a;
+  --muted-foreground: #b4b4b4;
 
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --accent: #3a3a3a;
+  --accent-foreground: #fafafa;
 
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fca5a5;
 
-  --border: oklch(0.269 0 0);
+  --border: #3a3a3a;
 
-  --input: oklch(0.269 0 0);
+  --input: #3a3a3a;
 
-  --ring: oklch(0.439 0 0);
+  --ring: #6b6b6b;
 }
 
 /* =========================
@@ -182,13 +186,14 @@
 /* =========================
    UTILITIES
 ========================= */
-.section {
-  margin: 100px 0;
-}
 
-.container {
+.section {
   min-height: calc(100vh - 80px);
   max-width: 1000px;
   margin: 40px auto;
   padding: 0 1rem;
+}
+
+.container {
+  margin: 0 auto;
 }
