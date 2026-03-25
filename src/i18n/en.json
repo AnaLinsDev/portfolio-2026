@@ -1,0 +1,20 @@
+{
+  "home": {
+    "title": "Home"
+  },
+  "aboutMe": {
+    "title": "About Me"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "contact": {
+    "title": "Contact"
+  }
+}

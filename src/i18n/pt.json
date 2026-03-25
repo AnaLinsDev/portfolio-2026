@@ -1,0 +1,20 @@
+{
+  "home": {
+    "title": "Início"
+  },
+  "aboutMe": {
+    "title": "Sobre Mim"
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "projects": {
+    "title": "Projetos"
+  },
+  "experience": {
+    "title": "Experiência"
+  },
+  "contact": {
+    "title": "Contato"
+  }
+}
