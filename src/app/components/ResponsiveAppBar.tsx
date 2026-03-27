@@ -15,7 +15,6 @@ import { useT } from "@/hooks/useT";
 
 const pages = [
   { idx: "home.idx", label: "home.title", href: "#home" },
-  { idx: "aboutMe.idx", label: "aboutMe.title", href: "#about" },
   { idx: "skills.idx", label: "skills.title", href: "#skills" },
   { idx: "projects.idx", label: "projects.title", href: "#projects" },
   { idx: "experience.idx", label: "experience.title", href: "#experience" },

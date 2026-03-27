@@ -3,29 +3,28 @@ import AppButton from "../AppButton";
 
 export default function Home() {
   const { t } = useT();
+
   return (
-    <div>
-      <h1>
-        {t("home.idx")}. {t("home.title")}
-      </h1>
+    <div className="hero">
+      <div className="hero_intro">{t("home.screen.intro")}</div>
 
-      <div>
-        <span>Hi, my name is</span>
+      <div className="hero_name">{t("home.screen.name")}</div>
 
-        <span>Alex Johnson</span>
+      <div className="hero_title">{t("home.screen.title")}</div>
 
-        <span>Fullstack Developer</span>
-
-        <span>
-          I build exceptional digital experiences that live on the web.
-          Specializing in creating robust, scalable applications with modern
-          technologies and best practices.
-        </span>
+      <div className="hero_description">
+        {t("home.screen.description.line01")} <br />
+        <br />
+        {t("home.screen.description.line02")}
       </div>
 
-      <div className="home-buttons">
-        <AppButton text="View Projects" classStyle="highlight-class" />
-        <AppButton text="Contact Me" classStyle="dark-class" />
+      <div className="home_buttons">
+        <AppButton
+          text="View Projects"
+          classStyle="highlight-class"
+          href="#projects"
+        />
+        <AppButton text="Contact Me" classStyle="dark-class" href="#contact" />
       </div>
     </div>
   );

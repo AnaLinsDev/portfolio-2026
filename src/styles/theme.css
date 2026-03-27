@@ -5,8 +5,8 @@
   --font-size: 16px;
 
   --highlight-color: rgb(100, 255, 218);
-  --gray-color: rgb(136, 146, 176);
-  --white-color: rgb(204, 214, 246);
+  --gray-color: rgb(204, 214, 246);
+  --white-color: #ffffff;
 
   --dark-button: rgba(0, 139, 118, 0.287);
 
@@ -49,6 +49,11 @@
   --text-xl: 1.25rem;
   --text-lg: 1.125rem;
   --text-base: 1rem;
+
+  --font-hero-intro: 1.2rem;
+  --font-hero-name: 3.2rem;
+  --font-hero-title: 2.2rem;
+  --font-hero-description: 1.25rem;
 
   --font-weight-medium: 500;
   --font-weight-normal: 400;
@@ -188,6 +193,10 @@
 /* =========================
    UTILITIES
 ========================= */
+
+.section-container {
+  min-height: calc(100vh - 80px);
+}
 
 .section {
   min-height: calc(100vh - 80px);

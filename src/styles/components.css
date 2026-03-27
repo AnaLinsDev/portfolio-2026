@@ -9,7 +9,6 @@
   transition: all 0.3s ease;
 }
 
-/* Outline button */
 .highlight-class {
   padding: 13px 23px !important;
   border: 2px solid var(--highlight-color) !important;
@@ -20,7 +19,6 @@
   background-color: #112240 !important;
 }
 
-/* Dark button */
 .dark-class {
   padding: 15px 25px !important;
   background-color: var(--dark-button) !important;
@@ -32,11 +30,48 @@
   color: var(--highlight-color) !important;
 }
 
-/* Container */
-.home-buttons {
+.home_buttons {
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+.hero {
+  min-height: calc(100vh - 80px);
+  justify-content: center;
+  padding: 0 1.25rem 6.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero_intro {
+  font-size: var(--font-hero-intro);
+  color: var(--highlight-color);
+  font-weight: var(--font-weight-normal);
+}
+
+.hero_name {
+  font-size: var(--font-hero-name);
+  font-weight: var(--font-weight-medium);
+  color: var(--white-color);
+  line-height: 1.1;
+}
+
+.hero_title {
+  font-size: var(--font-hero-title);
+  font-weight: var(--font-weight-medium);
+  color: var(--gray-color);
+}
+
+.hero_description {
+  font-size: var(--font-hero-description);
+  color: var(--gray-color);
+  text-justify: newspaper;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
 /* =========================

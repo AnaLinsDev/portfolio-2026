@@ -20,7 +20,7 @@ html {
 }
 
 .highlight {
-  color: var(--white-color) !important;
+  color: var(--gray-color) !important;
   transition: color 0.2s ease;
 }
 

@@ -1,4 +1,3 @@
-import AboutMe from "./components/screens/AboutMe";
 import ScreenCard from "./components/ScreenCard";
 import Skills from "./components/screens/Skills";
 import Home from "./components/screens/Home";
@@ -9,7 +8,6 @@ import ResponsiveAppBar from "./components/ResponsiveAppBar";
 
 const sections = [
   { id: "home", component: Home },
-  { id: "about", component: AboutMe },
   { id: "skills", component: Skills },
   { id: "projects", component: Projects },
   { id: "experience", component: Experience },
@@ -23,7 +21,7 @@ function App() {
       <div className="container">
         {sections.map(({ id, component: Section }) => (
           <ScreenCard key={id}>
-            <div id={id}>
+            <div id={id} className="section-container">
               <Section />
             </div>
           </ScreenCard>

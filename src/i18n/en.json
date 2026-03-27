@@ -1,26 +1,31 @@
 {
   "home": {
     "idx": "01",
-    "title": "Home"
-  },
-  "aboutMe": {
-    "idx": "02",
-    "title": "About Me"
+    "title": "About Me",
+    "screen": {
+      "intro": "Hi, my name is",
+      "name": "Ana Júlia Lins",
+      "title": "Fullstack Developer",
+      "description": {
+        "line01": "Software developer with adaptability and a proactive approach to learning new technologies, capable of integrating into and adding value to multidisciplinary teams.",
+        "line02": "Currently seeking opportunities to apply my skills in the research and development of innovative solutions, actively contributing to the creation and improvement of systems."
+      }
+    }
   },
   "skills": {
-    "idx": "03",
+    "idx": "02",
     "title": "Skills"
   },
   "projects": {
-    "idx": "04",
+    "idx": "03",
     "title": "Projects"
   },
   "experience": {
-    "idx": "05",
+    "idx": "04",
     "title": "Experience"
   },
   "contact": {
-    "idx": "06",
+    "idx": "05",
     "title": "Contact"
   }
 }
