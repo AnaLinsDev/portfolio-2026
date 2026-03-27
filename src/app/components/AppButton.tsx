@@ -1,3 +1,4 @@
+import { useScreenActions } from "@/hooks/useScreenActions ";
 import Button from "@mui/material/Button";
 
 type Props = {
@@ -7,13 +8,15 @@ type Props = {
 };
 
 export default function AppButton({ text, classStyle, href }: Props) {
+  const setActive = useScreenActions();
+  
   const goToPage = (href: string) => {
     const element = document.querySelector(href);
 
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       window.history.replaceState(null, "", href);
-      //setActive(href);
+      setActive(href);
     }
   };
 

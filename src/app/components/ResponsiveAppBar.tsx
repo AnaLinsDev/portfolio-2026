@@ -12,6 +12,8 @@ import CodeIcon from "@mui/icons-material/Code";
 import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import { useT } from "@/hooks/useT";
+import { useScreenState } from "@/hooks/useScreenState";
+import { useScreenActions } from "@/hooks/useScreenActions ";
 
 const pages = [
   { idx: "home.idx", label: "home.title", href: "#home" },
@@ -24,7 +26,8 @@ const pages = [
 function ResponsiveAppBar() {
   const { t } = useT();
   const [isScrolled, setIsScrolled] = React.useState(false);
-  const [active, setActive] = React.useState("#home");
+  const active = useScreenState();
+  const setActive = useScreenActions();
 
   React.useEffect(() => {
     const handleScroll = () => {

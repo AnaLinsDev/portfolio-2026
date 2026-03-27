@@ -4,7 +4,7 @@ import { createRoot } from "react-dom/client";
 import "../styles/index.css";
 import "../i18n";
 import App from "./App";
-
+import { ScreenProvider } from "@/providers/ScreenProvider";
 
 const rootElement = document.getElementById("root");
 
@@ -14,6 +14,8 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <StrictMode>
-    <App />
-  </StrictMode>
+    <ScreenProvider>
+      <App />
+    </ScreenProvider>
+  </StrictMode>,
 );
