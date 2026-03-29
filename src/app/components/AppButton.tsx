@@ -13,6 +13,8 @@ export default function AppButton({ text, classStyle, href }: Props) {
   const goToPage = (href: string) => {
     const element = document.querySelector(href);
 
+    if (!element) return;
+
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       window.history.replaceState(null, "", href);

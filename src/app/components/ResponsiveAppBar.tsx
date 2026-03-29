@@ -65,11 +65,11 @@ function ResponsiveAppBar() {
   const goToPage = (href: string) => {
     const element = document.querySelector(href);
 
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      window.history.replaceState(null, "", href); // update URL
-      setActive(href);
-    }
+    if (!element) return;
+
+    element.scrollIntoView({ behavior: "smooth" });
+    window.history.replaceState(null, "", href);
+    setActive(href);
 
     handleCloseNavMenu();
   };
@@ -124,18 +124,29 @@ function ResponsiveAppBar() {
                 horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
-              onClose={goToPage}
+              onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.href} onClick={() => goToPage(page.href)}>
+                <MenuItem
+                  className="navbar-item"
+                  key={page.href}
+                  onClick={() => goToPage(page.href)}
+                >
                   <Typography
                     sx={{
-                      textAlign: "center",
-                      width: "100%",
+                      textAlign: "left",
+                      width: "100vw",
                     }}
                   >
-                    {t(page.idx)}. {t(page.label)}
+                    <span className="highlight-default">{t(page.idx)}.</span>{" "}
+                    <span
+                      className={
+                        active === page.href ? "highlight-default" : "highlight"
+                      }
+                    >
+                      {t(page.label)}
+                    </span>
                   </Typography>
                 </MenuItem>
               ))}
