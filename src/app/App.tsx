@@ -5,6 +5,8 @@ import Projects from "./screens/Projects";
 import Experience from "./screens/Experience";
 import Contact from "./screens/Contact";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
+import { useEffect } from "react";
+import { useScreenActions } from "@/hooks/useScreenActions ";
 
 const sections = [
   { id: "home", component: Home },
@@ -15,6 +17,30 @@ const sections = [
 ];
 
 function App() {
+  const setActive = useScreenActions();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(`#${entry.target.id}`);
+          }
+        });
+      },
+      {
+        rootMargin: "-40% 0px -40% 0px",
+      },
+    );
+
+    sections.forEach((section) => {
+      const el = document.getElementById(section.id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [setActive]);
+
   return (
     <>
       <ResponsiveAppBar />

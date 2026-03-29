@@ -14,6 +14,7 @@ import IconButton from "@mui/material/IconButton";
 import { useT } from "@/hooks/useT";
 import { useScreenState } from "@/hooks/useScreenState";
 import { useScreenActions } from "@/hooks/useScreenActions ";
+import { useEffect } from "react";
 
 const pages = [
   { idx: "home.idx", label: "home.title", href: "#home" },
@@ -28,8 +29,8 @@ function ResponsiveAppBar() {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const active = useScreenState();
   const setActive = useScreenActions();
-
-  React.useEffect(() => {
+  
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
@@ -38,7 +39,7 @@ function ResponsiveAppBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const hash = window.location.hash || "#home";
     setActive(hash);
 
@@ -63,7 +64,7 @@ function ResponsiveAppBar() {
   };
 
   const goToPage = (href: string) => {
-    const element = document.querySelector(href);
+     const element = document.querySelector(href);
 
     if (!element) return;
 
@@ -87,7 +88,7 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box
-            onClick={() => goToPage("#home")}
+            onClick={() => goToPage("home")}
             component="a"
             sx={{
               display: { xs: "none", md: "flex" },
