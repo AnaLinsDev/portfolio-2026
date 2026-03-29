@@ -1,5 +1,5 @@
 import { useT } from "@/hooks/useT";
-import AppButton from "../AppButton";
+import AppButton from "../components/AppButton";
 
 export default function Home() {
   const { t } = useT();

@@ -19,7 +19,7 @@ html {
   background-color: var(--background) !important;
 }
 
-.highlight {
+.highlight, .highlight-text {
   color: var(--gray-color) !important;
   transition: color 0.2s ease;
 }

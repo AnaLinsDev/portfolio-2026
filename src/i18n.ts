@@ -14,7 +14,7 @@ i18n.use(initReactI18next).init({
   },
 
   // Default language
-  lng: "en",
+  lng: "pt",
 
   // Fallback if translation is missing
   fallbackLng: "en",

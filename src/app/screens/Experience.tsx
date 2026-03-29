@@ -1,5 +1,6 @@
 import { useT } from "@/hooks/useT";
-import ScreenTitle from "../ScreenTitle";
+import ScreenTitle from "../components/ScreenTitle";
+
 
 export default function Experience() {
   const { t } = useT();

@@ -8,7 +8,7 @@
   --gray-color: rgb(204, 214, 246);
   --white-color: #ffffff;
 
-  --dark-button: rgba(0, 139, 118, 0.287);
+  --dark-component: rgba(0, 139, 118, 0.287);
 
   --background: #ffffff;
   --foreground: rgb(10, 25, 47);
@@ -57,6 +57,8 @@
 
   --font-weight-medium: 500;
   --font-weight-normal: 400;
+
+  --dark-font-color: rgb(155, 161, 183);
 }
 
 /* =========================
@@ -66,7 +68,7 @@
   --background: rgb(10, 25, 47);
   --foreground: #fafafa;
 
-  --card: rgb(10, 25, 47);
+  --card: rgb(18, 35, 66);
   --card-foreground: #fafafa;
 
   --popover: rgb(10, 25, 47);

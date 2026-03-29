@@ -1,9 +1,9 @@
 import ScreenCard from "./components/ScreenCard";
-import Skills from "./components/screens/Skills";
-import Home from "./components/screens/Home";
-import Projects from "./components/screens/Projects";
-import Experience from "./components/screens/Experience";
-import Contact from "./components/screens/Contact";
+import Skills from "./screens/Skills";
+import Home from "./screens/Home";
+import Projects from "./screens/Projects";
+import Experience from "./screens/Experience";
+import Contact from "./screens/Contact";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 
 const sections = [
