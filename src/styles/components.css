@@ -92,8 +92,7 @@
 }
 
 #container-projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
   margin-top: 3rem;
 }
@@ -170,6 +169,7 @@
 .icon-project-link:hover {
   color: var(--highlight-color);
 }
+
 
 /* =========================
   EXPERIENCE

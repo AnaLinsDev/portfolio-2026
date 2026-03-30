@@ -12,16 +12,14 @@ export const projects = [
   {
     image: "/images/project1.png",
     title: "project1.title",
-    descriptionResumed: "project1.descriptionResumed",
     descriptionComplete: "project1.descriptionComplete",
     listOfTech: ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
     linkGithub: "https://github.com/youruser/task-manager",
     linkDemo: "https://task-manager-demo.com",
   },
   {
-    image: "/images/project2.png",
+    image: "/images/project2.jpg",
     title: "project2.title",
-    descriptionResumed: "project2.descriptionResumed",
     descriptionComplete: "project2.descriptionComplete",
     listOfTech: ["Vue", "Vuex", "Firebase", "Stripe API"],
     linkGithub: "https://github.com/youruser/ecommerce",
@@ -30,7 +28,6 @@ export const projects = [
   {
     image: "/images/project3.png",
     title: "project3.title",
-    descriptionResumed: "project3.descriptionResumed",
     descriptionComplete: "project3.descriptionComplete",
     listOfTech: ["React", "Socket.io", "Node.js", "Express"],
     linkGithub: "https://github.com/youruser/chat-app",
@@ -39,7 +36,6 @@ export const projects = [
   {
     image: "/images/project4.png",
     title: "project4.title",
-    descriptionResumed: "project4.descriptionResumed",
     descriptionComplete: "project4.descriptionComplete",
     listOfTech: ["Nuxt", "Vuetify", "CSS", "Netlify"],
     linkGithub: "https://github.com/youruser/portfolio",
@@ -48,7 +44,6 @@ export const projects = [
   {
     image: "/images/project5.png",
     title: "project5.title",
-    descriptionResumed: "project5.descriptionResumed",
     descriptionComplete: "project5.descriptionComplete",
     listOfTech: ["React", "Recharts", "TailwindCSS", "REST API"],
     linkGithub: "https://github.com/youruser/dashboard",
@@ -57,7 +52,6 @@ export const projects = [
   {
     image: "/images/project6.png",
     title: "project6.title",
-    descriptionResumed: "project6.descriptionResumed",
     descriptionComplete: "project6.descriptionComplete",
     listOfTech: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS"],
     linkGithub: "https://github.com/youruser/booking-system",
@@ -100,7 +94,6 @@ export const skills = [
       "componentization",
       "cleanCode",
       "solid",
-      "scalableFrontend",
     ],
     icon: AccountTreeOutlinedIcon,
   },

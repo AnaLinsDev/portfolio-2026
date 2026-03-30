@@ -5,7 +5,6 @@ export type Project = {
   title: string;
   image: string;
 
-  descriptionResumed: string;
   descriptionComplete: string;
 
   linkGithub: string;

@@ -10,33 +10,43 @@ type Props = {
   project: Project;
 };
 
-export default function CardProject({ project }: Props) {
+export default function CardProjectHorizontal({ project }: Props) {
   const { t } = useT();
   const prefix = "projects.screen.projects.";
 
   return (
     <div
       style={{
+        display: "flex",
+        gap: "1rem",
         height: "100%",
       }}
     >
       {/* 🖼️ Image */}
-      <img
-        src={project.image}
-        alt={project.title}
+      <div
         style={{
-          width: "100%",
-          height: "12rem",
-          borderRadius: "5pt",
+          width: "280px",
+          backgroundColor: "rgba(0, 139, 118, 0.287)"
         }}
-      />
+      >
+        <img
+          src={project.image}
+          alt={project.title}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain", 
+
+          }}
+        />
+      </div>
 
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           gap: "1rem",
-          height: "calc(100% - 12rem)",
+          flex: 1,
         }}
       >
         <div

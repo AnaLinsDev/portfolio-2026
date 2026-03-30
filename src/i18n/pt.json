@@ -97,32 +97,26 @@
       "projects": {
         "project1": {
           "title": "Projeto Lorem Ipsum",
-          "descriptionResumed": "Lorem ipsum dolor sit amet.",
-          "descriptionComplete": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          "descriptionComplete": "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         "project2": {
           "title": "Projeto Lorem Ipsum",
-          "descriptionResumed": "Lorem ipsum dolor sit amet.",
           "descriptionComplete": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         "project3": {
           "title": "Projeto Lorem Ipsum",
-          "descriptionResumed": "Lorem ipsum dolor sit amet.",
           "descriptionComplete": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         },
         "project4": {
           "title": "Projeto Lorem Ipsum",
-          "descriptionResumed": "Lorem ipsum dolor sit amet.",
           "descriptionComplete": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         },
         "project5": {
           "title": "Projeto Lorem Ipsum",
-          "descriptionResumed": "Lorem ipsum dolor sit amet.",
           "descriptionComplete": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
         },
         "project6": {
           "title": "Projeto Lorem Ipsum",
-          "descriptionResumed": "Lorem ipsum dolor sit amet.",
           "descriptionComplete": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
         }
       }
