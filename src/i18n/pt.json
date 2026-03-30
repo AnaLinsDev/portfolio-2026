@@ -99,6 +99,10 @@
   },
   "contact": {
     "idx": "05",
-    "title": "Contato"
+    "title": "Contato",
+    "page": {
+      "title": "Entre em Contato",
+      "description": "Atualmente estou aberta a novas oportunidades e projetos interessantes. Seja para tirar uma dúvida, colaborar ou apenas dizer oi, minha caixa de entrada está sempre aberta. Farei o possível para responder o mais rápido possível!"
+    }
   }
 }

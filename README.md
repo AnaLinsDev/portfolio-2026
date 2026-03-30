@@ -16,6 +16,15 @@ A modern and clean single-page portfolio built with React + Vite.
 
 ## ⚙️ Getting Started
 
+### Lighthouse
+
+```bash
+lighthouse http://localhost:5173/
+```
+
+---
+
+
 ### 1. Clone the repository
 
 ```bash

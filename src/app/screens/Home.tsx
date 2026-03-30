@@ -12,19 +12,22 @@ export default function Home() {
 
       <div className="hero_title">{t("home.screen.title")}</div>
 
+      {/* Description Section */}
       <div className="hero_description">
         {t("home.screen.description.line01")} <br />
         <br />
         {t("home.screen.description.line02")}
       </div>
 
-      <div className="home_buttons">
-        <AppButton
-          text="View Projects"
-          classStyle="highlight-class"
-          href="#projects"
-        />
-        <AppButton text="Contact Me" classStyle="dark-class" href="#contact" />
+      <div className="home_container_buttons">
+        {/* Buttons Section */}
+        <div className="home_buttons">
+          <AppButton
+            text="View Projects"
+            classStyle="highlight-class"
+            href="#projects"
+          />
+        </div>
       </div>
     </div>
   );
