@@ -18,3 +18,11 @@ export type Skill = {
   technologies: string[];
   icon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
 };
+
+export type Experience = {
+  position: string;
+  from: string;
+  to: string;
+  company: string;
+  responsibilities: string[];
+};

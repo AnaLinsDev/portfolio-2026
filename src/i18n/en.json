@@ -124,7 +124,44 @@
   },
   "experience": {
     "idx": "04",
-    "title": "Experience"
+    "title": "Experience",
+    "screen": {
+      "experiences": [
+        {
+          "position": "Frontend Developer",
+          "from": "Jan 2022",
+          "to": "Dec 2023",
+          "company": "Tech Solutions Inc.",
+          "responsibilities": [
+            "Developed responsive user interfaces using React and Tailwind",
+            "Integrated REST APIs using Axios",
+            "Improved application performance and accessibility"
+          ]
+        },
+        {
+          "position": "Fullstack Developer",
+          "from": "Jan 2024",
+          "to": "Present",
+          "company": "Automation Corp",
+          "responsibilities": [
+            "Built and maintained applications using C# and Flutter",
+            "Designed backend services with Entity Framework",
+            "Collaborated with cross-functional teams on automation solutions"
+          ]
+        },
+        {
+          "position": "Fullstack Developer",
+          "from": "Jan 2024",
+          "to": "Present",
+          "company": "Automation Corp",
+          "responsibilities": [
+            "Built and maintained applications using C# and Flutter",
+            "Designed backend services with Entity Framework",
+            "Collaborated with cross-functional teams on automation solutions"
+          ]
+        }
+      ]
+    }
   },
   "contact": {
     "idx": "05",

@@ -113,8 +113,10 @@
   }
 }
 .card-app {
+  height: 100%;
+  flex: 1;
   background-color: var(--color-card);
-  border: 0.5px solid var(--dark-font-color);
+  border: 0.5pt solid var(--dark-font-color);
   border-radius: 5pt;
 }
 
@@ -122,20 +124,15 @@
   border: 1px solid var(--highlight-color);
 }
 
-.card-skill-title {
-  display: flex;
-  gap: 0.6rem;
-  margin-bottom: 1rem;
-}
 
-.card-skill-title > .icon-skill {
+.card-title > .icon-skill {
   color: var(--highlight-color);
 
   height: 100%;
   margin: auto 0;
 }
 
-.card-skill-title > .title-skill {
+.card-title > .title-skill {
   font-size: 1.35rem;
 }
 
@@ -169,7 +166,6 @@
 .icon-project-link:hover {
   color: var(--highlight-color);
 }
-
 
 /* =========================
   EXPERIENCE

@@ -57,7 +57,7 @@ export default function CardProject({ project }: Props) {
               fontSize: "1.2rem",
             }}
           >
-            <h2 style={{ margin: 0 }}>{t(prefix + project.title)}</h2>
+            <div className="card-title" style={{ margin: 0 }}>{t(prefix + project.title)}</div>
 
             <div
               style={{

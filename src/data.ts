@@ -8,6 +8,42 @@ import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
 import HubOutlinedIcon from "@mui/icons-material/HubOutlined";
 import AccountTreeOutlinedIcon from "@mui/icons-material/AccountTreeOutlined";
 
+export const experiences = [
+  {
+    position: "0.position",
+    from: "0.from",
+    to: "0.to",
+    company: "0.company",
+    responsibilities: [
+      "0.responsibilities.0",
+      "0.responsibilities.1",
+      "0.responsibilities.2",
+    ],
+  },
+  {
+    position: "1.position",
+    from: "1.from",
+    to: "1.to",
+    company: "1.company",
+    responsibilities: [
+      "1.responsibilities.0",
+      "1.responsibilities.1",
+      "1.responsibilities.2",
+    ],
+  },
+  {
+    position: "2.position",
+    from: "2.from",
+    to: "2.to",
+    company: "2.company",
+    responsibilities: [
+      "2.responsibilities.0",
+      "2.responsibilities.1",
+      "2.responsibilities.2",
+    ],
+  },
+];
+
 export const projects = [
   {
     image: "/images/project1.png",

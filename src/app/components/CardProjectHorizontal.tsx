@@ -63,11 +63,9 @@ export default function CardProjectHorizontal({ project }: Props) {
             style={{
               display: "flex",
               justifyContent: "space-between",
-              fontWeight: "bold",
-              fontSize: "1.2rem",
             }}
           >
-            <h2 style={{ margin: 0 }}>{t(prefix + project.title)}</h2>
+            <div className="card-title" style={{ margin: 0 }}>{t(prefix + project.title)}</div>
 
             <div
               style={{

@@ -229,3 +229,35 @@
   height: 1px;
   background: var(--highlight-color);
 }
+
+.card-title {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  font-size: var(--text-xl);
+  font-weight: 400;
+}
+
+.line-experience {
+  width: 2px;
+  background: var(--dark-font-color);
+  margin-right: 3rem;
+  align-self: stretch;
+  transition: all 0.3s ease;
+  margin-top: 15pt;
+}
+
+.group:hover .line-experience {
+  background: var(--highlight-color);
+}
+
+.group:hover .card-app {
+  border: 1px solid var(--highlight-color);
+}
+
+.icon-experience {
+  color: var(--background);
+  background-color: var(--highlight-color);;
+  padding: 2pt;
+  border-radius: 50%;
+}

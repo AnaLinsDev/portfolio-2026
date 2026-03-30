@@ -13,7 +13,7 @@ export default function Skills() {
 
       <div id="container-skills">
         {skills.map((skill, idx) => (
-          <CardApp key={idx} padding="p-6">
+          <CardApp key={idx} padding="p-4">
             <CardSkill skill={skill} />
           </CardApp>
         ))}

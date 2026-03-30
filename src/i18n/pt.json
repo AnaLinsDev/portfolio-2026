@@ -19,7 +19,7 @@
     "skillsList": {
       "titles": {
         "frontend": "Frontend",
-        "state": "Gerenciamento de Estado",
+        "state": "Estado",
         "backend": "Backend & APIs",
         "database": "Banco de Dados & ORM",
         "testing": "Testes & Qualidade de Código",
@@ -124,7 +124,44 @@
   },
   "experience": {
     "idx": "04",
-    "title": "Experiência"
+    "title": "Experiência",
+    "screen": {
+      "experiences": [
+        {
+          "position": "Desenvolvedora Frontend",
+          "from": "Jan 2022",
+          "to": "Dez 2023",
+          "company": "Tech Solutions Inc.",
+          "responsibilities": [
+            "Desenvolvimento de interfaces responsivas com React e Tailwind",
+            "Integração com APIs REST utilizando Axios",
+            "Melhoria de performance e acessibilidade da aplicação"
+          ]
+        },
+        {
+          "position": "Desenvolvedora Fullstack",
+          "from": "Jan 2024",
+          "to": "Atual",
+          "company": "Automation Corp",
+          "responsibilities": [
+            "Desenvolvimento e manutenção com C# e Flutter",
+            "Implementação de serviços backend com Entity Framework",
+            "Colaboração com times para soluções de automação"
+          ]
+        },
+        {
+          "position": "Desenvolvedora Fullstack",
+          "from": "Jan 2024",
+          "to": "Atual",
+          "company": "Automation Corp",
+          "responsibilities": [
+            "Desenvolvimento e manutenção com C# e Flutter",
+            "Implementação de serviços backend com Entity Framework",
+            "Colaboração com times para soluções de automação"
+          ]
+        }
+      ]
+    }
   },
   "contact": {
     "idx": "05",

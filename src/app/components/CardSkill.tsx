@@ -16,7 +16,7 @@ export default function CardSkill({ skill }: Props) {
 
   return (
     <div>
-      <div className="card-skill-title">
+      <div className="card-title">
         <Icon className="icon-skill" />
         <div className="title-skill">
           {t(i18nPrefix + `titles.${skill.title}`)}
