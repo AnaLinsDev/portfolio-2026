@@ -9,17 +9,17 @@ export default function Contact() {
     {
       href: "https://github.com/teste",
       icon: <FaGithub />,
-      label: "GitHub profile",
+      label: "GitHub",
     },
     {
       href: "https://www.linkedin.com/in/teste/",
       icon: <FaLinkedin />,
-      label: "LinkedIn profile",
+      label: "LinkedIn",
     },
     {
       href: "mailto:teste@gmail.com",
       icon: <FaEnvelope />,
-      label: "Send email",
+      label: "email",
     },
   ];
 

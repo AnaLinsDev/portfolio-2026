@@ -1,19 +1,16 @@
 import { useT } from "@/hooks/useT";
+import { Skill } from "@/types/types";
 
 import Chip from "@mui/material/Chip";
-import { OverridableComponent } from "@mui/material/OverridableComponent";
-import { SvgIconTypeMap } from "@mui/material/SvgIcon";
 
-type SkillProp = {
-  title: string;
-  technologies: string[];
-  icon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
+type Props = {
+  skill: Skill;
 };
 
-export default function CardSkill({ title, technologies, icon }: SkillProp) {
+export default function CardSkill({ skill }: Props) {
   const { t } = useT();
 
-  const Icon = icon;
+  const Icon = skill.icon;
 
   const i18nPrefix = "skills.skillsList.";
 
@@ -21,11 +18,13 @@ export default function CardSkill({ title, technologies, icon }: SkillProp) {
     <div>
       <div className="card-skill-title">
         <Icon className="icon-skill" />
-        <div className="title-skill">{t(i18nPrefix + `titles.${title}`)}</div>
+        <div className="title-skill">
+          {t(i18nPrefix + `titles.${skill.title}`)}
+        </div>
       </div>
 
       <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
-        {technologies.map((tech, idx) => (
+        {skill.technologies.map((tech, idx) => (
           <Chip
             key={idx}
             label={t(i18nPrefix + `tech.${tech}`)}

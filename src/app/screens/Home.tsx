@@ -23,7 +23,7 @@ export default function Home() {
         {/* Buttons Section */}
         <div className="home_buttons">
           <AppButton
-            text="View Projects"
+            text={t("home.screen.button")}
             classStyle="highlight-class"
             href="#projects"
           />
