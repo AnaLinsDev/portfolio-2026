@@ -7,6 +7,29 @@ import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
 import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
 import HubOutlinedIcon from "@mui/icons-material/HubOutlined";
 import AccountTreeOutlinedIcon from "@mui/icons-material/AccountTreeOutlined";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
+
+export const email = "teste@gmail.com";
+
+export const contacts = [
+  {
+    href: "https://github.com/teste",
+    icon: GitHubIcon,
+    label: "GitHub",
+  },
+  {
+    href: "https://www.linkedin.com/in/teste/",
+    icon: LinkedInIcon,
+    label: "LinkedIn",
+  },
+  {
+    href: `mailto:${email}`,
+    icon: EmailIcon,
+    label: "email",
+  },
+];
 
 export const experiences = [
   {
@@ -126,11 +149,7 @@ export const skills = [
   },
   {
     title: "architecture",
-    technologies: [
-      "componentization",
-      "cleanCode",
-      "solid",
-    ],
+    technologies: ["componentization", "cleanCode", "solid"],
     icon: AccountTreeOutlinedIcon,
   },
   {

@@ -1,27 +1,14 @@
 import { useT } from "@/hooks/useT";
-import ScreenTitle from "../components/ScreenTitle";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { email, contacts } from "@/data";
+import IconContact from "../components/IconContact";
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
 export default function Contact() {
   const { t } = useT();
 
-  const contacts = [
-    {
-      href: "https://github.com/teste",
-      icon: <FaGithub />,
-      label: "GitHub",
-    },
-    {
-      href: "https://www.linkedin.com/in/teste/",
-      icon: <FaLinkedin />,
-      label: "LinkedIn",
-    },
-    {
-      href: "mailto:teste@gmail.com",
-      icon: <FaEnvelope />,
-      label: "email",
-    },
-  ];
+  function handleCopy() {
+    navigator.clipboard.writeText(email);
+  }
 
   return (
     <div className="contact_container">
@@ -34,23 +21,21 @@ export default function Contact() {
       <ul className="contact_list">
         {contacts.map((contact, index) => (
           <li key={index} className="contact_item">
-            <a
+            <IconContact
               href={contact.href}
-              target={contact.href.startsWith("http") ? "_blank" : undefined}
-              rel={
-                contact.href.startsWith("http")
-                  ? "noopener noreferrer"
-                  : undefined
-              }
-              aria-label={contact.label}
-              title={contact.label}
-              className="contact_link"
-            >
-              {contact.icon}
-            </a>
+              icon={contact.icon}
+              label={contact.label}
+            />
           </li>
         ))}
       </ul>
+
+      <div className="contact_email_container">
+        <span>{email}</span>
+        <button onClick={handleCopy} className="contact_copy">
+          <ContentCopyIcon fontSize="small" />
+        </button>
+      </div>
     </div>
   );
 }
