@@ -29,7 +29,7 @@ export default function CardExperience({ experience }: Props) {
           display: "flex",
           flexDirection: "column",
           gap: "1rem",
-          marginTop: "2rem",
+          marginTop: "1rem",
         }}
       >
         {experience.responsibilities.map((resp, idx) => (

@@ -12,6 +12,9 @@ export default function Home() {
 
       <div className="hero_title">{t("home.screen.title")}</div>
 
+      {/* 🌍 Languages */}
+      <div className="hero_languages">{t("home.screen.languages")}</div>
+
       {/* Description Section */}
       <div className="hero_description">
         {t("home.screen.description.line01")} <br />

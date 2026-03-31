@@ -75,12 +75,14 @@ export default function CardProjectHorizontal({ project }: Props) {
               }}
               onClick={(e) => e.stopPropagation()}
             >
-              <a href={project.linkDemo} target="_blank" title="Demo">
-                <OpenInNewOutlinedIcon
-                  fontSize="small"
-                  className="icon-project-link"
-                />
-              </a>
+              {project.linkDemo !== "" && (
+                <a href={project.linkDemo} target="_blank" title="Demo">
+                  <OpenInNewOutlinedIcon
+                    fontSize="small"
+                    className="icon-project-link"
+                  />
+                </a>
+              )}
 
               <a href={project.linkGithub} target="_blank" title="GitHub">
                 <GitHubIcon fontSize="small" className="icon-project-link" />

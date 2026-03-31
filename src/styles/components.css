@@ -80,6 +80,13 @@
   margin-top: 10px;
 }
 
+.hero_languages {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+}
+
 /* =========================
   SKILLS
 ========================= */

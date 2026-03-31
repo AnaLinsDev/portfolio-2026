@@ -11,16 +11,16 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 
-export const email = "teste@gmail.com";
+export const email = "analinsdev@gmail.com";
 
 export const contacts = [
   {
-    href: "https://github.com/teste",
+    href: "https://github.com/AnaLinsDev",
     icon: GitHubIcon,
     label: "GitHub",
   },
   {
-    href: "https://www.linkedin.com/in/teste/",
+    href: "https://www.linkedin.com/in/ana-julia-lins-devbrasil/",
     icon: LinkedInIcon,
     label: "LinkedIn",
   },
@@ -69,52 +69,31 @@ export const experiences = [
 
 export const projects = [
   {
-    image: "/images/project1.png",
+    image:
+      "https://user-images.githubusercontent.com/60307596/81940568-1b2da800-95ce-11ea-85a5-68189354b434.PNG",
     title: "project1.title",
     descriptionComplete: "project1.descriptionComplete",
-    listOfTech: ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
-    linkGithub: "https://github.com/youruser/task-manager",
-    linkDemo: "https://task-manager-demo.com",
+    listOfTech: ["React", "HTML", "CSS", "Json"],
+    linkGithub: "https://github.com/AnaLinsDev/cadastro-reactjs",
+    linkDemo: "",
   },
   {
-    image: "/images/project2.jpg",
+    image:
+      "https://user-images.githubusercontent.com/60307596/130265320-63646d08-c7a4-490b-aadd-77cec15a7f80.PNG",
     title: "project2.title",
     descriptionComplete: "project2.descriptionComplete",
-    listOfTech: ["Vue", "Vuex", "Firebase", "Stripe API"],
-    linkGithub: "https://github.com/youruser/ecommerce",
-    linkDemo: "https://ecommerce-demo.com",
+    listOfTech: ["React", "Redux", "HTML", "Sass", "API"],
+    linkGithub: "https://github.com/AnaLinsDev/free-to-play-app-reactjs",
+    linkDemo: "",
   },
   {
-    image: "/images/project3.png",
+    image:
+      "https://user-images.githubusercontent.com/60307596/81362712-ded2e700-90b7-11ea-9814-142b1c9508fd.PNG",
     title: "project3.title",
     descriptionComplete: "project3.descriptionComplete",
-    listOfTech: ["React", "Socket.io", "Node.js", "Express"],
-    linkGithub: "https://github.com/youruser/chat-app",
-    linkDemo: "https://chat-demo.com",
-  },
-  {
-    image: "/images/project4.png",
-    title: "project4.title",
-    descriptionComplete: "project4.descriptionComplete",
-    listOfTech: ["Nuxt", "Vuetify", "CSS", "Netlify"],
-    linkGithub: "https://github.com/youruser/portfolio",
-    linkDemo: "https://portfolio-demo.com",
-  },
-  {
-    image: "/images/project5.png",
-    title: "project5.title",
-    descriptionComplete: "project5.descriptionComplete",
-    listOfTech: ["React", "Recharts", "TailwindCSS", "REST API"],
-    linkGithub: "https://github.com/youruser/dashboard",
-    linkDemo: "https://dashboard-demo.com",
-  },
-  {
-    image: "/images/project6.png",
-    title: "project6.title",
-    descriptionComplete: "project6.descriptionComplete",
-    listOfTech: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS"],
-    linkGithub: "https://github.com/youruser/booking-system",
-    linkDemo: "https://booking-demo.com",
+    listOfTech: ["React", "Node", "HTML", "CSS"],
+    linkGithub: "https://github.com/AnaLinsDev/be-the-hero",
+    linkDemo: "",
   },
 ];
 

@@ -6,6 +6,7 @@
       "intro": "Olá, meu nome é",
       "name": "Ana Júlia Lins",
       "title": "Desenvolvedora Fullstack",
+      "languages": "🇧🇷 Português (Nativa) • 🇺🇸 Inglês (B2)",
       "description": {
         "line01": "Desenvolvedora de software com adaptabilidade e proatividade na aprendizagem de novas tecnologias, capaz de integrar e agregar valor a equipes multidisciplinares.",
         "line02": "Atualmente, busco oportunidades para aplicar minhas habilidades na pesquisa e no desenvolvimento de soluções inovadoras, contribuindo ativamente para a criação e melhoria de sistemas."
@@ -96,28 +97,16 @@
     "screen": {
       "projects": {
         "project1": {
-          "title": "Projeto Lorem Ipsum",
-          "descriptionComplete": "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          "title": "Sistema de Gerenciamento de Usuários",
+          "descriptionComplete": "Aplicação para gerenciamento de usuários com um sistema completo de CRUD, permitindo criar, editar, listar e excluir usuários de forma simples e intuitiva."
         },
         "project2": {
-          "title": "Projeto Lorem Ipsum",
-          "descriptionComplete": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "Plataforma de Descoberta de Jogos",
+          "descriptionComplete": "Aplicação web desenvolvida para praticar conceitos de React e Redux, integrando com a API gratuita FreeToGame e Firebase para buscar, gerenciar e exibir dados de jogos de forma dinâmica."
         },
         "project3": {
-          "title": "Projeto Lorem Ipsum",
-          "descriptionComplete": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-        },
-        "project4": {
-          "title": "Projeto Lorem Ipsum",
-          "descriptionComplete": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        "project5": {
-          "title": "Projeto Lorem Ipsum",
-          "descriptionComplete": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-        },
-        "project6": {
-          "title": "Projeto Lorem Ipsum",
-          "descriptionComplete": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+          "title": "Plataforma de Divulgação de Casos para ONGs",
+          "descriptionComplete": "Plataforma criada para expor casos reais e facilitar a comunicação entre ONGs e potenciais doadores, conectando causas a pessoas interessadas em contribuir."
         }
       }
     }
@@ -128,36 +117,36 @@
     "screen": {
       "experiences": [
         {
+          "position": "Estágio em desenvolvimento de software",
+          "from": "2021",
+          "to": "2022",
+          "company": "Laboratório Assert - Projeto AIoTT",
+          "responsibilities": [
+            "Participação em uma equipe multidisciplinar.",
+            "Estudo das tecnologia Vue para ser usada no projeto.",
+            "Auxílio na criação de componentes para a aplicação de automação de testes em uma fábrica."
+          ]
+        },
+        {
           "position": "Desenvolvedora Frontend",
-          "from": "Jan 2022",
-          "to": "Dez 2023",
-          "company": "Tech Solutions Inc.",
+          "from": "2022",
+          "to": "2023",
+          "company": "Laboratório Assert - Projeto AIoTT",
           "responsibilities": [
-            "Desenvolvimento de interfaces responsivas com React e Tailwind",
-            "Integração com APIs REST utilizando Axios",
-            "Melhoria de performance e acessibilidade da aplicação"
+            "Participação em uma equipe multidisciplinar.",
+            "Colaboração no desenvolvimento da aplicação de automação de testes em uma fábrica.",
+            "Utilização ferramentas essenciais como NuxtJS, Vuetify, Vuex e Git."
           ]
         },
         {
-          "position": "Desenvolvedora Fullstack",
-          "from": "Jan 2024",
-          "to": "Atual",
-          "company": "Automation Corp",
+          "position": "Laboratório Assert - Projeto DPR",
+          "from": "2023",
+          "to": "2025",
+          "company": "Desenvolvedora Fullstack",
           "responsibilities": [
-            "Desenvolvimento e manutenção com C# e Flutter",
-            "Implementação de serviços backend com Entity Framework",
-            "Colaboração com times para soluções de automação"
-          ]
-        },
-        {
-          "position": "Desenvolvedora Fullstack",
-          "from": "Jan 2024",
-          "to": "Atual",
-          "company": "Automation Corp",
-          "responsibilities": [
-            "Desenvolvimento e manutenção com C# e Flutter",
-            "Implementação de serviços backend com Entity Framework",
-            "Colaboração com times para soluções de automação"
+            "Participação em uma equipe focada em automação de um processo físico em uma fábrica.",
+            "Colaboração no desenvolvimento da aplicação de automação.",
+            "Utilização de ferramentas como .NET, WPF e Flutter."
           ]
         }
       ]

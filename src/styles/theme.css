@@ -242,9 +242,10 @@
   width: 2px;
   background: var(--dark-font-color);
   margin-right: 3rem;
-  align-self: stretch;
   transition: all 0.3s ease;
   margin-top: 15pt;
+
+  align-self: stretch;
 }
 
 .group:hover .line-experience {

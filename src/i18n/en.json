@@ -6,6 +6,7 @@
       "intro": "Hi, my name is",
       "name": "Ana Júlia Lins",
       "title": "Fullstack Developer",
+      "languages": "🇧🇷 Portuguese (Native) • 🇺🇸 English (B2)",
       "description": {
         "line01": "Software developer with adaptability and a proactive approach to learning new technologies, capable of integrating into and adding value to multidisciplinary teams.",
         "line02": "Currently seeking opportunities to apply my skills in the research and development of innovative solutions, actively contributing to the creation and improvement of systems."
@@ -96,28 +97,16 @@
     "screen": {
       "projects": {
         "project1": {
-          "title": "Projeto Lorem Ipsum",
-          "descriptionComplete": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          "title": "User Management System",
+          "descriptionComplete": "A user management application featuring a complete CRUD system, allowing creation, editing, listing, and deletion of users in a simple and intuitive interface."
         },
         "project2": {
-          "title": "Projeto Lorem Ipsum",
-          "descriptionComplete": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "Game Discovery Platform",
+          "descriptionComplete": "A web application built to practice React and Redux concepts, integrating with the free FreeToGame API and Firebase to fetch, manage, and display game data dynamically."
         },
         "project3": {
-          "title": "Projeto Lorem Ipsum",
-          "descriptionComplete": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-        },
-        "project4": {
-          "title": "Projeto Lorem Ipsum",
-          "descriptionComplete": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        "project5": {
-          "title": "Projeto Lorem Ipsum",
-          "descriptionComplete": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-        },
-        "project6": {
-          "title": "Projeto Lorem Ipsum",
-          "descriptionComplete": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+          "title": "NGO Case Sharing Platform",
+          "descriptionComplete": "A platform designed to showcase real cases and facilitate communication between NGOs and potential donors, helping connect causes with people willing to support them."
         }
       }
     }
@@ -128,36 +117,36 @@
     "screen": {
       "experiences": [
         {
+          "position": "Software Development Intern",
+          "from": "2021",
+          "to": "2022",
+          "company": "Assert Laboratory — AIoTT Project",
+          "responsibilities": [
+            "Participated in a multidisciplinary team.",
+            "Studied Vue technology for use in the project.",
+            "Assisted in the development of components for a test automation application used in a factory environment."
+          ]
+        },
+        {
           "position": "Frontend Developer",
-          "from": "Jan 2022",
-          "to": "Dec 2023",
-          "company": "Tech Solutions Inc.",
+          "from": "2022",
+          "to": "2023",
+          "company": "Assert Laboratory — AIoTT Project",
           "responsibilities": [
-            "Developed responsive user interfaces using React and Tailwind",
-            "Integrated REST APIs using Axios",
-            "Improved application performance and accessibility"
+            "Participated in a multidisciplinary team.",
+            "Collaborated in the development of a test automation application for a factory environment.",
+            "Used essential tools such as Nuxt.js, Vuetify, Vuex and Git."
           ]
         },
         {
-          "position": "Fullstack Developer",
-          "from": "Jan 2024",
-          "to": "Present",
-          "company": "Automation Corp",
+          "position": "Assert Laboratory — DPR Project",
+          "from": "2023",
+          "to": "2025",
+          "company": "Fullstack Developer",
           "responsibilities": [
-            "Built and maintained applications using C# and Flutter",
-            "Designed backend services with Entity Framework",
-            "Collaborated with cross-functional teams on automation solutions"
-          ]
-        },
-        {
-          "position": "Fullstack Developer",
-          "from": "Jan 2024",
-          "to": "Present",
-          "company": "Automation Corp",
-          "responsibilities": [
-            "Built and maintained applications using C# and Flutter",
-            "Designed backend services with Entity Framework",
-            "Collaborated with cross-functional teams on automation solutions"
+            "Participated in a team focused on automating a physical process in a factory environment.",
+            "Collaborated in the development of an automation application.",
+            "Used technologies such as .NET, WPF and Flutter."
           ]
         }
       ]
