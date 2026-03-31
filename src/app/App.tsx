@@ -46,7 +46,7 @@ function App() {
       <ResponsiveAppBar />
       <div className="container">
         {sections.map(({ id, component: Section }) => (
-          <ScreenCard key={id}>
+          <ScreenCard key={id} id={id}>
             <div id={id} className="section-container">
               <Section />
             </div>
