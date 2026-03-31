@@ -5,6 +5,7 @@ import OpenInNewOutlinedIcon from "@mui/icons-material/OpenInNewOutlined";
 import { Project } from "@/types/types";
 import Chip from "@mui/material/Chip";
 import { useT } from "@/hooks/useT";
+import LazyImage from "./LazyImage";
 
 type Props = {
   project: Project;
@@ -26,18 +27,16 @@ export default function CardProjectHorizontal({ project }: Props) {
       <div
         style={{
           width: "280px",
-          backgroundColor: "rgba(0, 139, 118, 0.287)"
+          backgroundColor: "rgba(0, 139, 118, 0.287)",
         }}
       >
-        <img
+        <LazyImage
           src={project.image}
           alt={project.title}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain", 
-
-          }}
+          width="100%"
+          height="100%"
+          objectFit="contain"
+          borderRadius="5pt 0 0 5pt"
         />
       </div>
 
@@ -65,7 +64,9 @@ export default function CardProjectHorizontal({ project }: Props) {
               justifyContent: "space-between",
             }}
           >
-            <div className="card-title" style={{ margin: 0 }}>{t(prefix + project.title)}</div>
+            <div className="card-title" style={{ margin: 0 }}>
+              {t(prefix + project.title)}
+            </div>
 
             <div
               style={{

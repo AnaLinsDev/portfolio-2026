@@ -5,6 +5,7 @@ import OpenInNewOutlinedIcon from "@mui/icons-material/OpenInNewOutlined";
 import { Project } from "@/types/types";
 import Chip from "@mui/material/Chip";
 import { useT } from "@/hooks/useT";
+import LazyImage from "./LazyImage";
 
 type Props = {
   project: Project;
@@ -21,14 +22,13 @@ export default function CardProject({ project }: Props) {
       }}
     >
       {/* 🖼️ Image */}
-      <img
+      <LazyImage
         src={project.image}
         alt={project.title}
-        style={{
-          width: "100%",
-          height: "12rem",
-          borderRadius: "5pt",
-        }}
+        width="100%"
+        height="12rem"
+        borderRadius="5pt 5pt 0 0 "
+        objectFit="contain"
       />
 
       <div
@@ -57,7 +57,9 @@ export default function CardProject({ project }: Props) {
               fontSize: "1.2rem",
             }}
           >
-            <div className="card-title" style={{ margin: 0 }}>{t(prefix + project.title)}</div>
+            <div className="card-title" style={{ margin: 0 }}>
+              {t(prefix + project.title)}
+            </div>
 
             <div
               style={{

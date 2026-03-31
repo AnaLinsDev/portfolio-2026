@@ -1,4 +1,6 @@
 import * as React from "react";
+import { useEffect } from "react";
+
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -7,14 +9,15 @@ import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import IconButton from "@mui/material/IconButton";
 
 import CodeIcon from "@mui/icons-material/Code";
 import MenuIcon from "@mui/icons-material/Menu";
-import IconButton from "@mui/material/IconButton";
+import TranslateIcon from "@mui/icons-material/Translate";
+
 import { useT } from "@/hooks/useT";
 import { useScreenState } from "@/hooks/useScreenState";
-import { useScreenActions } from "@/hooks/useScreenActions ";
-import { useEffect } from "react";
+import { useScreenActions } from "@/hooks/useScreenActions";
 
 const pages = [
   { idx: "home.idx", label: "home.title", href: "#home" },
@@ -25,11 +28,23 @@ const pages = [
 ];
 
 function ResponsiveAppBar() {
-  const { t } = useT();
+  const { t, lang, setLang } = useT();
   const [isScrolled, setIsScrolled] = React.useState(false);
   const active = useScreenState();
   const setActive = useScreenActions();
-  
+
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
+    null,
+  );
+
+  // 🌐 Toggle language
+  const toggleLanguage = () => {
+    const newLang = lang === "en" ? "pt" : "en";
+    setLang(newLang);
+    localStorage.setItem("lang", newLang);
+  };
+
+  // Scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -39,6 +54,15 @@ function ResponsiveAppBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Load saved language
+  useEffect(() => {
+    const savedLang = localStorage.getItem("lang");
+    if (savedLang && savedLang !== lang) {
+      setLang(savedLang);
+    }
+  }, []);
+
+  // Handle initial navigation
   useEffect(() => {
     const hash = window.location.hash || "#home";
     setActive(hash);
@@ -46,14 +70,10 @@ function ResponsiveAppBar() {
     const element = document.querySelector(hash);
     if (element) {
       setTimeout(() => {
-        element.scrollIntoView();
+        element.scrollIntoView({ behavior: "smooth" });
       }, 0);
     }
   }, []);
-
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-    null,
-  );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -64,7 +84,7 @@ function ResponsiveAppBar() {
   };
 
   const goToPage = (href: string) => {
-     const element = document.querySelector(href);
+    const element = document.querySelector(href);
 
     if (!element) return;
 
@@ -87,13 +107,15 @@ function ResponsiveAppBar() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+          {/* Logo */}
           <Box
-            onClick={() => goToPage("home")}
+            onClick={() => goToPage("#home")}
             component="a"
             sx={{
               display: { xs: "none", md: "flex" },
               mr: 1,
               color: "inherit",
+              cursor: "pointer",
             }}
           >
             <CodeIcon className="highlight-default" />
@@ -104,8 +126,6 @@ function ResponsiveAppBar() {
             <IconButton
               size="large"
               aria-label="menu"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
             >
@@ -115,31 +135,19 @@ function ResponsiveAppBar() {
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
+              anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+              transformOrigin={{ vertical: "top", horizontal: "left" }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
                 <MenuItem
-                  className="navbar-item"
                   key={page.href}
                   onClick={() => goToPage(page.href)}
+                  className="navbar-item"
                 >
-                  <Typography
-                    sx={{
-                      textAlign: "left",
-                      width: "100vw",
-                    }}
-                  >
+                  <Typography sx={{ width: "100vw", textAlign: "left" }}>
                     <span className="highlight-default">{t(page.idx)}.</span>{" "}
                     <span
                       className={
@@ -154,12 +162,34 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
 
+          <Box
+            sx={{
+              display: { xs: "flex", md: "none" },
+              alignItems: "center",
+              marginLeft: "auto",
+            }}
+          >
+            <Button
+              onClick={toggleLanguage}
+              startIcon={<TranslateIcon />}
+              sx={{
+                color: "white",
+                minWidth: "auto",
+                textTransform: "none",
+              }}
+            >
+              {lang.toUpperCase()}
+            </Button>
+          </Box>
+
           {/* Desktop menu */}
           <Box
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
               justifyContent: "flex-end",
+              alignItems: "center",
+              gap: 1,
             }}
           >
             {pages.map((page) => (
@@ -167,11 +197,9 @@ function ResponsiveAppBar() {
                 key={page.href}
                 onClick={() => goToPage(page.href)}
                 disableRipple
-                disableTouchRipple
                 sx={{
                   my: 2,
                   color: "white",
-                  display: "block",
                   textTransform: "none",
                   backgroundColor: "transparent",
                   "&:hover": {
@@ -189,10 +217,24 @@ function ResponsiveAppBar() {
                 </span>
               </Button>
             ))}
+
+            {/* 🌐 Language switch (desktop) */}
+            <Button
+              onClick={toggleLanguage}
+              startIcon={<TranslateIcon />}
+              sx={{
+                marginLeft: "4rem",
+                color: "white",
+                textTransform: "none",
+              }}
+            >
+              {lang.toUpperCase()}
+            </Button>
           </Box>
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
+
 export default ResponsiveAppBar;
