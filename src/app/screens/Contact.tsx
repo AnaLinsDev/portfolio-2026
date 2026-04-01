@@ -1,7 +1,7 @@
 import { useT } from "@/hooks/useT";
 import { email, contacts } from "@/data";
 import IconContact from "../components/IconContact";
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 export default function Contact() {
   const { t } = useT();
@@ -13,10 +13,10 @@ export default function Contact() {
   return (
     <div className="contact_container">
       <h2 className="contact_title highlight-font">
-        {t("contact.idx")}. {t("contact.page.title")}
+        {t("contact.idx")}. {t("contact.screen.title")}
       </h2>
 
-      <p className="contact_description">{t("contact.page.description")}</p>
+      <p className="contact_description">{t("contact.screen.description")}</p>
 
       <ul className="contact_list">
         {contacts.map((contact, index) => (
@@ -32,7 +32,11 @@ export default function Contact() {
 
       <div className="contact_email_container">
         <span>{email}</span>
-        <button onClick={handleCopy} className="contact_copy">
+        <button
+          onClick={handleCopy}
+          className="contact_copy"
+          aria-label={t("contact.screen.copy")}
+        >
           <ContentCopyIcon fontSize="small" />
         </button>
       </div>

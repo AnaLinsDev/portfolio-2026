@@ -110,6 +110,7 @@ function ResponsiveAppBar() {
           {/* Logo */}
           <Box
             onClick={() => goToPage("#home")}
+            href="#home"
             component="a"
             sx={{
               display: { xs: "none", md: "flex" },
@@ -143,6 +144,8 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem
+                  href={page.href}
+                  component="a"
                   key={page.href}
                   onClick={() => goToPage(page.href)}
                   className="navbar-item"
@@ -194,6 +197,8 @@ function ResponsiveAppBar() {
           >
             {pages.map((page) => (
               <Button
+                component="a"
+                href={page.href}
                 key={page.href}
                 onClick={() => goToPage(page.href)}
                 disableRipple

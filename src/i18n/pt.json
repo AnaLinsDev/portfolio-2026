@@ -155,8 +155,9 @@
   "contact": {
     "idx": "05",
     "title": "Contato",
-    "page": {
+    "screen": {
       "title": "Entre em Contato",
+      "copy": "Copiar e-mail para a área de transferência",
       "description": "Atualmente estou aberta a novas oportunidades e projetos interessantes. Seja para tirar uma dúvida, colaborar ou apenas dizer oi, minha caixa de entrada está sempre aberta. Farei o possível para responder o mais rápido possível!"
     }
   }

@@ -155,8 +155,9 @@
   "contact": {
     "idx": "05",
     "title": "Contact",
-    "page": {
+    "screen": {
       "title": "Get In Touch",
+      "copy": "Copy email to clipboard",
       "description": "I'm currently open to new opportunities and interesting projects. Whether you have a question, want to collaborate, or just want to say hi. I'll try my best to get back to you!"
     }
   }

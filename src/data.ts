@@ -27,7 +27,7 @@ export const contacts = [
   {
     href: `mailto:${email}`,
     icon: EmailIcon,
-    label: "email",
+    label: "Email",
   },
 ];
 
