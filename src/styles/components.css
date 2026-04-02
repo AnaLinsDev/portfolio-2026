@@ -125,6 +125,7 @@
   background-color: var(--color-card);
   border: 0.5pt solid var(--dark-font-color);
   border-radius: 5pt;
+  padding-right: 1rem;
 }
 
 .card-app:hover {

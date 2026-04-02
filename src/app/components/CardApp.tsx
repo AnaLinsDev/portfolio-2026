@@ -12,7 +12,7 @@ export default function CardApp({
   isExperience = false,
 }: Props) {
   return (
-    <div className={isExperience ? "flex group" : "block"}>
+    <div className={isExperience ? "flex group" : "block"} >
       {isExperience && (
         <>
           <BusinessCenterIcon
@@ -23,7 +23,7 @@ export default function CardApp({
         </>
       )}
 
-      <div className={"card-app " + padding}>{children}</div>
+      <div className={"card-app " + padding} >{children}</div>
     </div>
   );
 }
