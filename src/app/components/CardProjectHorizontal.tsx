@@ -26,14 +26,13 @@ export default function CardProjectHorizontal({ project }: Props) {
       {/* 🖼️ Image */}
       <div
         style={{
-          width: "280px",
           backgroundColor: "rgba(0, 139, 118, 0.287)",
         }}
       >
         <LazyImage
           src={project.image}
           alt={project.title}
-          width="100%"
+          width="28rem"
           height="100%"
           objectFit="contain"
           borderRadius="5pt 0 0 5pt"

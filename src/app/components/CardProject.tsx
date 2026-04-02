@@ -28,7 +28,7 @@ export default function CardProject({ project }: Props) {
         width="100%"
         height="12rem"
         borderRadius="5pt 5pt 0 0 "
-        objectFit="contain"
+        objectFit="cover"
       />
 
       <div

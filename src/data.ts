@@ -95,6 +95,24 @@ export const projects = [
     linkGithub: "https://github.com/AnaLinsDev/be-the-hero",
     linkDemo: "",
   },
+  {
+    image:
+      "https://user-images.githubusercontent.com/60307596/81362712-ded2e700-90b7-11ea-9814-142b1c9508fd.PNG",
+    title: "project4.title",
+    descriptionComplete: "project4.descriptionComplete",
+    listOfTech: ["React", "Node", "HTML", "CSS"],
+    linkGithub: "https://github.com/AnaLinsDev/be-the-hero",
+    linkDemo: "",
+  },
+  {
+    image:
+      "https://user-images.githubusercontent.com/60307596/81362712-ded2e700-90b7-11ea-9814-142b1c9508fd.PNG",
+    title: "project5.title",
+    descriptionComplete: "project5.descriptionComplete",
+    listOfTech: ["React", "Node", "HTML", "CSS"],
+    linkGithub: "https://github.com/AnaLinsDev/be-the-hero",
+    linkDemo: "",
+  },
 ];
 
 export const skills = [
