@@ -19,7 +19,6 @@ export default function CardProjectHorizontal({ project }: Props) {
     <div
       style={{
         display: "flex",
-        gap: "1rem",
         height: "100%",
       }}
     >
