@@ -106,12 +106,12 @@ export const projects = [
   },
   {
     image:
-      "https://user-images.githubusercontent.com/60307596/81362712-ded2e700-90b7-11ea-9814-142b1c9508fd.PNG",
+      "https://github.com/user-attachments/assets/2436a4f8-94a3-469d-99f8-992d7934b480",
     title: "project5.title",
     descriptionComplete: "project5.descriptionComplete",
-    listOfTech: ["React", "Node", "HTML", "CSS"],
-    linkGithub: "https://github.com/AnaLinsDev/be-the-hero",
-    linkDemo: "",
+    listOfTech: ["React", "IndexedDB", "HTML", "CSS", "Tailwind"],
+    linkGithub: "https://github.com/AnaLinsDev/my-agenda-app",
+    linkDemo: "https://my-agenda-app-woad.vercel.app/",
   },
 ];
 
