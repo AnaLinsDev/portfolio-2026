@@ -97,15 +97,6 @@ export const projects = [
   },
   {
     image:
-      "https://user-images.githubusercontent.com/60307596/81362712-ded2e700-90b7-11ea-9814-142b1c9508fd.PNG",
-    title: "project4.title",
-    descriptionComplete: "project4.descriptionComplete",
-    listOfTech: ["React", "Node", "HTML", "CSS"],
-    linkGithub: "https://github.com/AnaLinsDev/be-the-hero",
-    linkDemo: "",
-  },
-  {
-    image:
       "https://github.com/user-attachments/assets/2436a4f8-94a3-469d-99f8-992d7934b480",
     title: "project5.title",
     descriptionComplete: "project5.descriptionComplete",
