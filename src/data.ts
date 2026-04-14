@@ -69,17 +69,46 @@ export const experiences = [
 
 export const projects = [
   {
-    image:
-      "https://user-images.githubusercontent.com/60307596/81940568-1b2da800-95ce-11ea-85a5-68189354b434.PNG",
+    image: "/images/project5.png",
+    title: "project5.title",
+    descriptionComplete: "project5.descriptionComplete",
+    listOfTech: [
+      "Typescript",
+      "React",
+      "IndexedDB",
+      "HTML/CSS",
+      "ESLint",
+      "Tailwind",
+    ],
+    linkGithub: "https://github.com/AnaLinsDev/my-agenda-app",
+    linkDemo: "https://my-agenda-app-woad.vercel.app/",
+  },
+  {
+    image: "/images/project4.png",
+    title: "project4.title",
+    descriptionComplete: "project4.descriptionComplete",
+    listOfTech: [
+      "Typescript",
+      "React",
+      "Express",
+      "HTML/CSS",
+      "ESLint",
+      "Tailwind",
+      "Vitest",
+    ],
+    linkGithub: "https://github.com/AnaLinsDev/factory-pulse",
+    linkDemo: "",
+  },
+  {
+    image: "/images/project1.png",
     title: "project1.title",
     descriptionComplete: "project1.descriptionComplete",
-    listOfTech: ["React", "HTML", "CSS", "Json"],
+    listOfTech: ["React", "HTML/CSS", "Json"],
     linkGithub: "https://github.com/AnaLinsDev/cadastro-reactjs",
     linkDemo: "",
   },
   {
-    image:
-      "https://user-images.githubusercontent.com/60307596/130265320-63646d08-c7a4-490b-aadd-77cec15a7f80.PNG",
+    image: "/images/project2.png",
     title: "project2.title",
     descriptionComplete: "project2.descriptionComplete",
     listOfTech: ["React", "Redux", "HTML", "Sass", "API"],
@@ -87,22 +116,12 @@ export const projects = [
     linkDemo: "",
   },
   {
-    image:
-      "https://user-images.githubusercontent.com/60307596/81362712-ded2e700-90b7-11ea-9814-142b1c9508fd.PNG",
+    image: "/images/project3.png",
     title: "project3.title",
     descriptionComplete: "project3.descriptionComplete",
-    listOfTech: ["React", "Node", "HTML", "CSS"],
+    listOfTech: ["React", "Node", "HTML/CSS"],
     linkGithub: "https://github.com/AnaLinsDev/be-the-hero",
     linkDemo: "",
-  },
-  {
-    image:
-      "https://github.com/user-attachments/assets/2436a4f8-94a3-469d-99f8-992d7934b480",
-    title: "project5.title",
-    descriptionComplete: "project5.descriptionComplete",
-    listOfTech: ["React", "IndexedDB", "HTML", "CSS", "Tailwind"],
-    linkGithub: "https://github.com/AnaLinsDev/my-agenda-app",
-    linkDemo: "https://my-agenda-app-woad.vercel.app/",
   },
 ];
 

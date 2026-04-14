@@ -108,6 +108,10 @@
           "title": "Plataforma de Divulgação de Casos para ONGs",
           "descriptionComplete": "Plataforma criada para expor casos reais e facilitar a comunicação entre ONGs e potenciais doadores, conectando causas a pessoas interessadas em contribuir."
         },
+        "project4": {
+          "title": "Dashboard para monitorar fábrica",
+          "descriptionComplete": "Um painel de monitoramento industrial em tempo real que simula um ambiente de chão de fábrica com máquinas e ordens de produção."
+        },
         "project5": {
           "title": "Agenda Pessoal",
           "descriptionComplete": "Plataforma criada para gerenciamento de atividades diárias, na qual é possível criar atividades, visualizar por semana e filtrar por categoria e pelo status de conclusão."
