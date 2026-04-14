@@ -108,7 +108,7 @@ export default function CardProject({ project }: Props) {
               {project.listOfTech.slice(0, 4).map((tech, idx) => (
                 <Chip
                   key={idx}
-                  label={tech}
+                  label={t(tech)}
                   size="small"
                   className="chip-skill"
                 />
