@@ -33,6 +33,7 @@
       "tech": {
         "react": "React",
         "next": "Next.js",
+        "python": "Python",
         "typescript": "TypeScript",
         "javascript": "JavaScript (ES6+)",
         "reactRouter": "React Router",

@@ -165,7 +165,7 @@ export const skills = [
   },
   {
     title: "backend",
-    technologies: ["node", "express", "rest", "jwt"],
+    technologies: ["node", "express", "python", "rest", "jwt"],
     icon: DnsOutlinedIcon,
   },
   {
