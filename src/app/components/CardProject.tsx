@@ -105,7 +105,7 @@ export default function CardProject({ project }: Props) {
                 flexWrap: "wrap",
               }}
             >
-              {project.listOfTech.slice(0, 4).map((tech, idx) => (
+              {project.listOfTech.slice(0, 6).map((tech, idx) => (
                 <Chip
                   key={idx}
                   label={t(tech)}

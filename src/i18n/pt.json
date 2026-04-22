@@ -33,6 +33,7 @@
       "tech": {
         "react": "React",
         "next": "Next.js",
+        "i18n": "i18n (internacionalização)",
         "python": "Python",
         "typescript": "TypeScript",
         "javascript": "JavaScript (ES6+)",
@@ -61,7 +62,7 @@
         "prisma": "Prisma",
         "sql": "SQL",
         "jest": "Jest",
-        "lint": "Linting (ESLint)",
+        "lint": "ESLint",
         "prettier": "Prettier",
         "cicd": "CI/CD",
         "vercel": "Vercel",

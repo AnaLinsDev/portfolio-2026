@@ -76,10 +76,9 @@ export const projects = [
       "skills.skillsList.tech.typescript",
       "skills.skillsList.tech.react",
       "skills.skillsList.tech.idb",
-      "skills.skillsList.tech.html",
-      "skills.skillsList.tech.css",
       "skills.skillsList.tech.lint",
       "skills.skillsList.tech.tailwind",
+      "skills.skillsList.tech.i18n",
     ],
     linkGithub: "https://github.com/AnaLinsDev/my-agenda-app",
     linkDemo: "https://my-agenda-app-woad.vercel.app/",
@@ -92,8 +91,6 @@ export const projects = [
       "skills.skillsList.tech.typescript",
       "skills.skillsList.tech.react",
       "skills.skillsList.tech.express",
-      "skills.skillsList.tech.html",
-      "skills.skillsList.tech.css",
       "skills.skillsList.tech.lint",
       "skills.skillsList.tech.tailwind",
       "skills.skillsList.tech.vitest",
@@ -147,10 +144,11 @@ export const skills = [
   {
     title: "frontend",
     technologies: [
+      "typescript",
       "react",
       "vue",
       "next",
-      "typescript",
+      "i18n",
       "javascript",
       "tailwind",
       "html",
@@ -160,7 +158,7 @@ export const skills = [
   },
   {
     title: "state",
-    technologies: ["zustand", "reactQuery", "contextApi", "zod"],
+    technologies: ["zustand", "contextApi", "zod"],
     icon: HubOutlinedIcon,
   },
   {
@@ -170,22 +168,22 @@ export const skills = [
   },
   {
     title: "database",
-    technologies: ["postgres", "prisma", "sql"],
+    technologies: ["postgres", "sql"],
     icon: StorageOutlinedIcon,
   },
   {
     title: "architecture",
-    technologies: ["componentization", "cleanCode", "solid"],
+    technologies: ["componentization", "cleanCode"],
     icon: AccountTreeOutlinedIcon,
   },
   {
     title: "devops",
-    technologies: ["vercel", "githubActions", "cicd"],
+    technologies: ["vercel", "githubActions"],
     icon: BuildOutlinedIcon,
   },
   {
     title: "versionControl",
-    technologies: ["git", "github", "gitFlow"],
+    technologies: ["git", "github"],
     icon: TerminalOutlinedIcon,
   },
   {
@@ -195,7 +193,19 @@ export const skills = [
   },
   {
     title: "learning",
-    technologies: ["docker", "systemDesign", "figma", "jest"],
+    technologies: ["docker", "figma", "jest"],
     icon: AutoGraphOutlinedIcon,
   },
+  /*
+  Study and create slides or pdfs to pass as learned:
+  - docker
+  - figma
+  - jest
+  - systemDesign
+  - reactQuery
+  - gitFlow
+  - cicd
+  - solid
+  - prisma
+  */
 ];
