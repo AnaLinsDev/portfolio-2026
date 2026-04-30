@@ -81,7 +81,7 @@ export const projects = [
       "skills.skillsList.tech.i18n",
     ],
     linkGithub: "https://github.com/AnaLinsDev/my-agenda-app",
-    linkDemo: "https://my-agenda-app-woad.vercel.app/",
+    linkDemo: "https://my-agenda-app-woad.vercel.app/login",
   },
   {
     image: "/images/project4.png",
