@@ -5,7 +5,7 @@ import DnsOutlinedIcon from "@mui/icons-material/DnsOutlined";
 import StorageOutlinedIcon from "@mui/icons-material/StorageOutlined";
 import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
 import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
-import HubOutlinedIcon from "@mui/icons-material/HubOutlined";
+import BugReportOutlinedIcon from "@mui/icons-material/BugReportOutlined";
 import AccountTreeOutlinedIcon from "@mui/icons-material/AccountTreeOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -69,16 +69,41 @@ export const experiences = [
 
 export const projects = [
   {
+    image: "/images/project1.png",
+    title: "project1.title",
+    descriptionComplete: "project1.descriptionComplete",
+    listOfTech: [
+      "skills.skillsList.tech.dotnet",
+      "skills.skillsList.tech.aspnet_core",
+      "skills.skillsList.tech.entity_framework_core",
+      "skills.skillsList.tech.async_await",
+      "skills.skillsList.tech.solid",
+      "skills.skillsList.tech.rest",
+    ],
+    linkGithub: "https://github.com/AnaLinsDev/cash-flow-api",
+    linkDemo: "",
+  },
+  {
+    image: "/images/project2.png",
+    title: "project2.title",
+    descriptionComplete: "project2.descriptionComplete",
+    listOfTech: [
+      "skills.skillsList.tech.dotnet",
+      "skills.skillsList.tech.aspnet_core",
+      "skills.skillsList.tech.rest",
+      "skills.skillsList.tech.sqlite",
+    ],
+    linkGithub: "https://github.com/AnaLinsDev/journey-api",
+    linkDemo: "",
+  },
+  {
     image: "/images/project5.png",
     title: "project5.title",
     descriptionComplete: "project5.descriptionComplete",
     listOfTech: [
       "skills.skillsList.tech.typescript",
       "skills.skillsList.tech.react",
-      "skills.skillsList.tech.idb",
-      "skills.skillsList.tech.lint",
       "skills.skillsList.tech.tailwind",
-      "skills.skillsList.tech.i18n",
     ],
     linkGithub: "https://github.com/AnaLinsDev/my-agenda-app",
     linkDemo: "https://my-agenda-app-woad.vercel.app/login",
@@ -90,57 +115,28 @@ export const projects = [
     listOfTech: [
       "skills.skillsList.tech.typescript",
       "skills.skillsList.tech.react",
-      "skills.skillsList.tech.express",
-      "skills.skillsList.tech.lint",
       "skills.skillsList.tech.tailwind",
-      "skills.skillsList.tech.vitest",
     ],
     linkGithub: "https://github.com/AnaLinsDev/factory-pulse",
-    linkDemo: "",
-  },
-  {
-    image: "/images/project1.png",
-    title: "project1.title",
-    descriptionComplete: "project1.descriptionComplete",
-    listOfTech: [
-      "skills.skillsList.tech.react",
-      "skills.skillsList.tech.html",
-      "skills.skillsList.tech.css",
-      "skills.skillsList.tech.axios",
-    ],
-    linkGithub: "https://github.com/AnaLinsDev/cadastro-reactjs",
-    linkDemo: "",
-  },
-  {
-    image: "/images/project2.png",
-    title: "project2.title",
-    descriptionComplete: "project2.descriptionComplete",
-    listOfTech: [
-      "skills.skillsList.tech.react",
-      "skills.skillsList.tech.redux",
-      "skills.skillsList.tech.html",
-      "skills.skillsList.tech.sass",
-      "skills.skillsList.tech.rest",
-    ],
-    linkGithub: "https://github.com/AnaLinsDev/free-to-play-app-reactjs",
-    linkDemo: "",
-  },
-  {
-    image: "/images/project3.png",
-    title: "project3.title",
-    descriptionComplete: "project3.descriptionComplete",
-    listOfTech: [
-      "skills.skillsList.tech.react",
-      "skills.skillsList.tech.node",
-      "skills.skillsList.tech.html",
-      "skills.skillsList.tech.css",
-    ],
-    linkGithub: "https://github.com/AnaLinsDev/be-the-hero",
     linkDemo: "",
   },
 ];
 
 export const skills = [
+  {
+    title: "backend",
+    technologies: [
+      "dotnet",
+      "csharp",
+      "aspnet_core",
+      "entity_framework_core",
+      "rest",
+      "jwt",
+      "dependency_injection",
+      "solid",
+    ],
+    icon: DnsOutlinedIcon,
+  },
   {
     title: "frontend",
     technologies: [
@@ -148,7 +144,6 @@ export const skills = [
       "react",
       "vue",
       "next",
-      "i18n",
       "javascript",
       "tailwind",
       "html",
@@ -157,46 +152,42 @@ export const skills = [
     icon: CodeOffOutlinedIcon,
   },
   {
-    title: "state",
-    technologies: ["zustand", "contextApi", "zod"],
-    icon: HubOutlinedIcon,
-  },
-  {
-    title: "backend",
-    technologies: ["node", "express", "python", "rest", "jwt"],
-    icon: DnsOutlinedIcon,
-  },
-  {
     title: "database",
-    technologies: ["postgres", "sql"],
+    technologies: ["postgresql", "sql"],
     icon: StorageOutlinedIcon,
   },
   {
     title: "architecture",
-    technologies: ["componentization", "cleanCode"],
+    technologies: [
+      "dotnet_layered_architecture",
+      "frontend_componentization",
+      "cleanCode",
+    ],
     icon: AccountTreeOutlinedIcon,
   },
   {
-    title: "devops",
-    technologies: ["vercel", "githubActions"],
-    icon: BuildOutlinedIcon,
+    title: "testing",
+    technologies: ["unit_tests"],
+    icon: BugReportOutlinedIcon,
   },
   {
     title: "versionControl",
-    technologies: ["git", "github"],
+    technologies: ["git", "github", "githubActions"],
     icon: TerminalOutlinedIcon,
   },
   {
     title: "tools",
-    technologies: ["vite", "postman", "scrum", "kanban"],
+    technologies: ["postman", "scrum", "kanban"],
     icon: BuildOutlinedIcon,
   },
   {
     title: "learning",
-    technologies: ["docker", "figma", "jest"],
+    technologies: ["docker", "integration_tests", "azure"],
     icon: AutoGraphOutlinedIcon,
   },
-  /*
+];
+
+/*
   Study and create slides or pdfs to pass as learned:
   - docker
   - figma
@@ -208,4 +199,3 @@ export const skills = [
   - solid
   - prisma
   */
-];

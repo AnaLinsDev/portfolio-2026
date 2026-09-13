@@ -69,7 +69,7 @@ export default function CardProjectHorizontal({ project }: Props) {
             <div
               style={{
                 display: "flex",
-                gap: "10px",
+                gap: "10px"
               }}
               onClick={(e) => e.stopPropagation()}
             >

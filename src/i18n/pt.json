@@ -1,15 +1,15 @@
 {
   "home": {
     "idx": "01",
-    "title": "About Me",
+    "title": "Sobre mim",
     "screen": {
       "intro": "Olá, meu nome é",
       "name": "Ana Júlia Lins",
-      "title": "Desenvolvedora Software",
+      "title": "Desenvolvedora de Software",
       "languages": "🇧🇷 Português (Nativa) • 🇺🇸 Inglês (B2)",
       "description": {
-        "line01": "Desenvolvedora de software com adaptabilidade e proatividade na aprendizagem de novas tecnologias, capaz de integrar e agregar valor a equipes multidisciplinares.",
-        "line02": "Atualmente, busco oportunidades para aplicar minhas habilidades na pesquisa e no desenvolvimento de soluções inovadoras, contribuindo ativamente para a criação e melhoria de sistemas."
+        "line01": "Desenvolvedora de software com foco em backend, experiência com C# e .NET, atuando no desenvolvimento de APIs REST e aplicações com foco em boas práticas de arquitetura e código.",
+        "line02": "Tenho experiência com ASP.NET Core, Entity Framework Core, bancos de dados relacionais, autenticação, testes automatizados, SOLID e injeção de dependência, buscando desenvolver soluções organizadas, testáveis e de fácil manutenção."
       },
       "button": "Meus Projetos"
     }
@@ -31,61 +31,59 @@
         "learning": "Estudando Atualmente"
       },
       "tech": {
+        "dotnet": ".NET 8.0 +",
+        "csharp": "C#",
+        "aspnet_core": "ASP.NET Core",
+        "entity_framework_core": "Entity Framework Core",
+        "dependency_injection": "Injeção de Dependência",
+        "async_await": "Async/Await",
+
+        "mysql": "MySQL",
+        "postgresql": "PostgreSQL",
+        "sql": "SQL",
+
+        "dotnet_layered_architecture": "Arquitetura em Camadas",
+        "frontend_componentization": "Componentização no Frontend",
+        "cleanCode": "Código Limpo",
+        "solid": "Princípios SOLID",
+
+        "unit_tests": "Testes de Unidade",
+        "integration_tests": "Testes de Integração",
+
+        "rest": "APIs REST",
+        "jwt": "Autenticação JWT",
+
         "react": "React",
         "next": "Next.js",
-        "i18n": "i18n (internacionalização)",
-        "python": "Python",
+        "vue": "Vue",
         "typescript": "TypeScript",
         "javascript": "JavaScript (ES6+)",
-        "reactRouter": "React Router",
-        "redux": "Redux",
-        "sass": "Sass",
-        "idb": "IndexedDB",
-        "vitest": "Vitest", 
-        "vue": "Vue",
         "html": "HTML5",
         "css": "CSS3",
         "tailwind": "TailwindCSS",
+
+        "i18n": "Internacionalização (i18n)",
         "responsive": "Design Responsivo",
-        "a11y": "Acessibilidade (a11y)",
-        "zustand": "Zustand",
-        "reactQuery": "React Query",
-        "contextApi": "Context API",
         "axios": "Axios",
-        "fetch": "Fetch API",
-        "zod": "Zod (validação)",
         "node": "Node.js",
-        "express": "Express",
-        "rest": "APIs REST",
-        "jwt": "Autenticação JWT",
-        "postgres": "PostgreSQL",
-        "prisma": "Prisma",
-        "sql": "SQL",
-        "jest": "Jest",
-        "lint": "ESLint",
-        "prettier": "Prettier",
-        "cicd": "CI/CD",
-        "vercel": "Vercel",
-        "githubActions": "GitHub Actions",
-        "env": "Variáveis de Ambiente",
-        "build": "Build & Deploy",
+
         "git": "Git",
         "github": "GitHub",
         "gitFlow": "Git Flow",
-        "pr": "Pull Requests",
-        "codeReview": "Code Review",
-        "componentization": "Componentização",
-        "cleanCode": "Clean Code",
-        "solid": "Princípios SOLID",
+        "codeReview": "Revisão de Código",
+        "githubActions": "GitHub Actions",
+        "cicd": "CI/CD",
+        "build": "Build e Deploy",
+
         "vscode": "VS Code",
-        "vite": "Vite",
         "postman": "Postman",
         "scrum": "Scrum",
         "kanban": "Kanban",
         "agile": "Metodologias Ágeis",
+
         "docker": "Docker",
-        "systemDesign": "System Design",
-        "figma": "Figma"
+        "azure": "Azure",
+        "systemDesign": "Design de Sistemas"
       }
     }
   },
@@ -95,24 +93,20 @@
     "screen": {
       "projects": {
         "project1": {
-          "title": "Sistema de Gerenciamento de Usuários",
-          "descriptionComplete": "Aplicação para gerenciamento de usuários com um sistema completo de CRUD, permitindo criar, editar, listar e excluir usuários de forma simples e intuitiva."
+          "title": "Cash Flow API - Gerenciamento de Despesas Pessoais",
+          "descriptionComplete": "Uma API REST para gerenciamento de despesas pessoais, permitindo cadastrar, atualizar, excluir e consultar despesas. O projeto demonstra o uso de arquitetura em camadas, injeção de dependência, Entity Framework Core, PostgreSQL, validação de regras de negócio, autenticação, testes automatizados e tratamento centralizado de exceções."
         },
         "project2": {
-          "title": "Plataforma de Descoberta de Jogos",
-          "descriptionComplete": "Aplicação web desenvolvida para praticar conceitos de React e Redux, integrando com a API gratuita FreeToGame e Firebase para buscar, gerenciar e exibir dados de jogos de forma dinâmica."
-        },
-        "project3": {
-          "title": "Plataforma de Divulgação de Casos para ONGs",
-          "descriptionComplete": "Plataforma criada para expor casos reais e facilitar a comunicação entre ONGs e potenciais doadores, conectando causas a pessoas interessadas em contribuir."
+          "title": "Journey API - Gerenciamento de Viagens",
+          "descriptionComplete": "Uma API REST para gerenciamento de viagens e suas atividades, permitindo criar, atualizar, consultar e excluir dados de viagens. O projeto demonstra o uso de arquitetura em camadas, injeção de dependência, Entity Framework Core, validação de regras de negócio, autenticação, testes automatizados e tratamento centralizado de exceções."
         },
         "project4": {
-          "title": "Dashboard para monitorar fábrica",
-          "descriptionComplete": "Um painel de monitoramento industrial em tempo real que simula um ambiente de chão de fábrica com máquinas e ordens de produção."
+          "title": "Dashboard para Monitoramento de Fábrica",
+          "descriptionComplete": "Um painel de monitoramento industrial em tempo real que simula um ambiente de chão de fábrica, permitindo acompanhar máquinas e ordens de produção por meio de uma interface interativa."
         },
         "project5": {
           "title": "Agenda Pessoal",
-          "descriptionComplete": "Plataforma criada para gerenciamento de atividades diárias, na qual é possível criar atividades, visualizar por semana e filtrar por categoria e pelo status de conclusão."
+          "descriptionComplete": "Uma aplicação para gerenciamento de atividades diárias, permitindo criar e gerenciar tarefas, visualizar atividades por semana e filtrá-las por categoria e status de conclusão."
         }
       }
     }
